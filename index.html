@@ -6,6 +6,16 @@
      aka "Default" || "Out of the Box"
  -->
 
+<!-- camelCaseUsageIsHere - first letter
+     is lowercase followed by each word upper
+
+     StudlyCapsIsUsedHere - Starts with uppercase
+     but is similar to camelCase
+
+     underscore_convention, double__underscore,
+     and double--hyphen
+-->
+
 <!-- Semantics - has meaning to content
     inside.
     <div> 555-555-5555 </div>
@@ -32,32 +42,44 @@
 <html>
   <head>
     <!-- Information about the page -->
+    <!-- Has to do with "localization" -->
     <meta charset="utf-8">
     <!-- The stuff that shows up
       at tab -->
+    <!-- Where we would link our css -->
     <title> Learning About Structure </title>
   </head>
 
   <body>
+    <!-- <ELEMENTNAME ATTRIBUTE="VALUE">
+          || "tag" -->
     <!-- WHERE VISIBLE CONTENT FOR
       PAGE EXISTS -->
-    <!-- Ul is the parent/container  -->
-    <ul>
-      <!-- Li is child to Ul   -->
-      <li>
+    <h1>List of Everyone</h1>
+    <!-- Ul is the parent/container
+         This is a general list of everyone -->
+    <!-- Added context with class attribute  -->
+    <ul class="listOfStudents">
+      <li class="student">
         <!-- Child to parent Li  -->
         <!-- Grand child to parent Ul -->
         <!-- The most important thing on page -->
-        <h1>Paul</h1>
+        <h2 class="studentName">Paul</h2>
         <!-- Child to parent Li  -->
         <!-- This is not the most important
               Data on page -->
-        <h2>HTML</h2>
+        <ol class="studentSkills">
+          <li class="studentSkill">HTML</li>
+          <li class="studentSkill">Git</li>
+        </ol>
       </li>
-      <li>
+      <li class="student">
         <!-- Just as important as Paul  -->
-        <h1>Mariah</h1>
-        <h2>HTML</h2>
+        <h2 class="studentName">Mariah</h2>
+        <ol class="studentSkills">
+          <li class="studentSkill">HTML</li>
+          <li class="studentSkill">Git</li>
+        </ol>
     </ul>
   </body>
 </html>
